@@ -4,6 +4,6 @@ if __name__ == '__main__':
 
     libc = ctypes.CDLL("./ex_lib.so")
 
-    counter = libc.count_function()
-
-
+    for i in range(5):
+        counter = libc.count_function()
+        print(counter)
